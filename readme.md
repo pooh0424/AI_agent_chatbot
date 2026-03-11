@@ -4,8 +4,8 @@
 
 ### 組員：
 
-* 呂紹銘
-* (請填寫組員2)
+- 呂紹銘
+- 曹世杰
 
 ## 專案簡介
 
@@ -64,8 +64,8 @@ GEMINI_API_KEY=your_api_key_here
 
 ### 問題 2
 
-問題：(請填寫其他遇到的問題)
-解法：(請填寫解法)
+問題：組員之間作業系統不同，導致venv無法直接通用
+解法：在另一個系統重新製作一份venv，並安裝相同的套件，或是使用 `requirements.txt` 來管理依賴套件，讓其他組員可以透過 `pip install -r requirements.txt` 快速安裝相同的環境。
 
 ---
 
@@ -73,8 +73,13 @@ GEMINI_API_KEY=your_api_key_here
 
 呂紹銘： 這次在重新開啟專案時，因為忘記了啟動的指令與流程，所以借助了 AI 的幫忙來還原。過程中遇到了 `venv` 虛擬環境因為路徑跑掉或相容性問題導致無法啟動伺服器（Fatal error in launcher）。透過與 AI 的對話與除錯，我學到了可以改用 `python -m uvicorn` 的方式來避免執行檔路徑綁定的問題，同時也複習了如何砍掉重練、重新建立乾淨的 Python 虛擬環境並安裝依賴套件。這讓我對 Python 專案的環境配置有更深的認識。
 
+曹世杰：GitHub 上的專案管理與版本控制是非常重要的技能，這次作業讓我更熟悉了如何使用 Git 來管理專案的不同版本，並且學會了如何在團隊中協作開發。
+
 ---
 
 ## GitHub 專案連結
 
 請填入小組各組員 GitHub repository 網址。
+
+- 曹世杰 https://github.com/Grayidea-bit/AIAGENT
+- 林楷祐 https://github.com/KyleLin0501/AI-Agent-ChatBot.git
