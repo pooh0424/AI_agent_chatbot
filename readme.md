@@ -6,6 +6,7 @@
 
 - 呂紹銘
 - 曹世杰
+- 林楷祐
 
 ## 專案簡介
 
@@ -13,12 +14,12 @@
 
 ## 目前功能
 
-*   **⚡ 現代化後端框架**：使用 FastAPI 構建，支援生成 Swagger UI (`/docs`) API 文件。
-*   **🧠 整合 Google Gemini AI**：使用 Google GenAI SDK 介接強大的 `gemini-2.5-flash` 模型。
-*   **📂 多模態檔案支援**：支援上傳圖片、文件等附件，可由 AI 進行視覺與文件內容分析。
-*   **🗄️ 歷史對話紀錄儲存**：結合 SQLAlchemy 與 SQLite 自動記錄每個 Session 的完整歷史軌跡。
-*   **🎭 System Prompts**：建立 Session 時支援自訂 System Prompt，讓 AI 扮演特定角色。
-*   **🌐 內建網頁介面**：開啟網址即可直接瀏覽內建的聊天 UI。
+- **⚡ 現代化後端框架**：使用 FastAPI 構建，支援生成 Swagger UI (`/docs`) API 文件。
+- **🧠 整合 Google Gemini AI**：使用 Google GenAI SDK 介接強大的 `gemini-2.5-flash` 模型。
+- **📂 多模態檔案支援**：支援上傳圖片、文件等附件，可由 AI 進行視覺與文件內容分析。
+- **🗄️ 歷史對話紀錄儲存**：結合 SQLAlchemy 與 SQLite 自動記錄每個 Session 的完整歷史軌跡。
+- **🎭 System Prompts**：建立 Session 時支援自訂 System Prompt，讓 AI 扮演特定角色。
+- **🌐 內建網頁介面**：開啟網址即可直接瀏覽內建的聊天 UI。
 
 ## 執行方式
 
@@ -41,7 +42,8 @@ pip install fastapi uvicorn sqlalchemy python-dotenv "google-genai" python-multi
 # 3. 啟動伺服器 (開發模式)
 python -m uvicorn main:app --reload
 ```
-*伺服器啟動後，請開啟瀏覽器前往 http://127.0.0.1:8000 即可看到網頁介面。*
+
+_伺服器啟動後，請開啟瀏覽器前往 http://127.0.0.1:8000 即可看到網頁介面。_
 
 ---
 
