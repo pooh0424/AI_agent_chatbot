@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Multimodal</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h2>AI Assistant</h2>
+            <span id="session-status">Initializing Session...</span>
+        </header>
+
+        <div class="chat-settings">
+            <input type="text" id="system-prompt-input"
+                placeholder="Character Setting (e.g. You are a helpful pirate...)">
+            <button type="button" id="new-session-btn">Start New Session</button>
+        </div>
+
+        <div class="chat-history" id="chat-history">
+            <!-- Messages will be injected here via JavaScript -->
+        </div>
+
+        <form class="chat-input-form" id="chat-form">
+            <label for="file-input" class="file-label">
+                📎
+                <input type="file" id="file-input" accept="image/*,application/pdf" />
+            </label>
+            <input type="text" id="message-input" placeholder="Type your message here..." autocomplete="off">
+            <button type="submit" id="send-btn">Send</button>
+        </form>
+        <div id="file-preview-container" class="hidden">
+            <span id="file-preview-name"></span>
+            <button type="button" id="remove-file-btn">✖</button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
